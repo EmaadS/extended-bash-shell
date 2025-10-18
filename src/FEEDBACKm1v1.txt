@@ -1,0 +1,48 @@
+25-January-2025 03:26:55---Student: m1v1
+25-January-2025 03:26:55----Code compiles:PASS
+Launch Suite:
+  25-January-2025 03:26:56----exit causes process to terminate with correct return code:OK
+  25-January-2025 03:26:58----Shell message is displayed, uses exit to test:OK
+Result:PASS
+Unknown Command Message:
+  25-January-2025 03:27:00----Unknown command should display corresponding message:OK
+  25-January-2025 03:27:02----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  25-January-2025 03:27:04----A not-too-long and legal command input is valid:OK
+  25-January-2025 03:27:06----Long command input is invalid:OK
+  25-January-2025 03:27:08----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  25-January-2025 03:27:10----Echo of one character displays correctly:OK
+  25-January-2025 03:27:12----Echo of simple message displays correctly:OK
+  25-January-2025 03:27:14----Echo of simple message displays correctly v3:OK
+  25-January-2025 03:27:16----Echo of simple message displays correctly v3:OK
+  25-January-2025 03:27:18----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  25-January-2025 03:27:20----Echo of mixed message displays correctly:OK
+  25-January-2025 03:27:22----echo with quotes has no special meaning:OK
+  25-January-2025 03:27:24----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  25-January-2025 03:27:26----Two echo commands display correctly:OK
+  25-January-2025 03:27:28----Two echo commands do not show error:OK
+  25-January-2025 03:27:30----Echo commands work while other commands error:OK
+Result:PASS
+Hidden - echo with hidden message and near limits:
+  25-January-2025 03:27:32----echo with a random message displays correctly:OK
+  25-January-2025 03:27:34----Echo command with 126 characters is displayed correctly:OK
+  25-January-2025 03:27:36----Echo command with 129 characters triggers an error message:OK
+Result:PASS
+Hidden - echo does not display an extra space:
+  25-January-2025 03:27:38----Echo command does not print trailing spaces:OK
+  25-January-2025 03:27:40----Echo command does not print leading spaces:OK
+  25-January-2025 03:27:42----Echo command does not print extra spaces in middle:OK
+Result:PASS
+Hidden - echonot:
+  25-January-2025 03:27:44----Invalid command given that includes a valid command as a prefix:OK
+  25-January-2025 03:27:46----Invalid command given that includes a valid command as a prefix:NOT OK
+Result:FAIL
+25-January-2025 03:27:48--- Suites Passed 9.0/10.0
+25-January-2025 03:27:48 FINISHED
